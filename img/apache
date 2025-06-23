@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /tu-proyecto/
+RewriteRule ^index\.html$ index.html [L]
+RewriteRule ^registro\.html$ registro.html [L]
+RewriteRule ^registrar\.php$ registrar.php [L]

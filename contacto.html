@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Fútbol Técnico y Táctico</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    .contacto-container {
+      text-align: center;
+    }
+
+    .contacto-container h2 {
+      color: #006400;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #006400;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004d00;
+    }
+
+    .mapa {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #006400;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #006400;
+      font-weight: bold;
+    }
+
+    .nav-menu a:hover {
+      color: #004d00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fútbol Técnico y Táctico</h1>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ejercicios.html">Ejercicios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contacto-container">
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna consulta o deseas colaborar? ¡Escríbenos!</p>
+
+      <form action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <input type="submit" value="Enviar mensaje">
+      </form>
+
+      <div class="mapa">
+        <h3>Ubicación - Estepa (Sevilla)</h3>
+        <iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2299436635866!2d-4.87600342438813!3d37.292789938213025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd6b9c0f9d23f%3A0xbaf587a894ba8a93!2sEstepa%2C%2041560%20Sevilla!5e0!3m2!1ses!2ses!4v1719063794106!5m2!1ses!2ses"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h5>&copy; 2025 Fútbol Técnico y Táctico. Todos los derechos reservados. Miguel Alfaro Marquez (Entrenador Regional de Futbol)</h5>
+  </footer>
+
+</body>
+</html>
